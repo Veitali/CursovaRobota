@@ -1,0 +1,35 @@
+<div class="main">
+  <div *ngIf="some"class="sidebar">
+    <app-side-bar ></app-side-bar>
+  </div>
+  <div class="another">
+    <header>
+      <div class="group">
+        <mat-toolbar>
+          <div>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon (click)="clickMe()">menu</mat-icon>
+            </button>
+
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon >search</mat-icon>
+            </button>
+          </div>
+         <div>
+           <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+             <mat-icon>settings</mat-icon>
+           </button>
+           <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+             <mat-icon>logout</mat-icon>
+           </button>
+         </div>
+        </mat-toolbar>
+      </div>
+    </header>
+    <div class="all_comp">
+      <router-outlet>
+
+      </router-outlet>
+    </div>
+  </div>
+</div>
